@@ -1,0 +1,13 @@
+//mixin responsiveness
+
+@mixin breakpointPhone {
+  	@media (max-width: #{$phone-width}) {
+    	@content;
+  }
+}
+
+@mixin breakpointTablet {
+	@media (max-width: #{$tablet-width}) {
+    	@content;
+  }
+}

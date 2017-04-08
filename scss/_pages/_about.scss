@@ -1,0 +1,40 @@
+//base about page structure
+
+
+
+
+
+//about page
+
+#main-about section {
+	@extend .section-halved;
+	height: 100vh;
+	max-height: 1080px;
+}
+
+#main-about section {
+	figure {
+		@include flexbox (flex, center, flex-end, row, nowrap);
+		img {
+			height: auto;
+		}
+	}
+}
+
+#main-about section:nth-child(2) {
+	div {
+		order: 2;
+		@include breakpointPhone {
+			order: 1;
+		}
+	}
+	figure {
+		order: 1;
+		border-left: none;
+		border-right: 2px solid $primaryColor;
+		@include breakpointPhone {
+			order: 2;
+		}
+	}
+}
+

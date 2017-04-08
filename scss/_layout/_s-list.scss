@@ -1,0 +1,42 @@
+//base section with list layout
+
+
+
+
+//section list style 1
+.section-list {
+	padding: 60px 0;
+	h2 {
+	padding-right: 30px;
+	width: 140px;
+	@include breakpointPhone {
+		padding-right: 0;
+	}
+	}
+	ul {
+		min-width: 320px;
+		width: 100%;
+		max-width: 800px;
+		li {
+			list-style-type: none;
+			font-family: $fontList;
+			font-size: $fontBodySize;
+			font-weight: $fontBodyWeight;
+			padding-bottom: 20px;
+			line-height: $lineHeightBody;
+		}
+	}
+	@include breakpointTablet {
+		@include flexbox (flex, center, center, column, nowrap);
+		font-size: $fontBodySizeTablet;
+	}
+	@include breakpointPhone {
+		font-size: $fontBodySizePhone;
+	}
+}
+
+.section-list-type-one {
+	@extend .section-base;
+	@extend .section-list;
+	@include flexboxAlignX (flex, center);
+}

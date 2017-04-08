@@ -1,0 +1,47 @@
+//theme Plantagenet
+
+
+@import url('https://fonts.googleapis.com/css?family=Lancelot');
+@import url('https://fonts.googleapis.com/css?family=Scada');
+
+@import '../base.scss';
+
+//theme color
+$primaryColor: $crimson;
+$secondaryColor: $alabaster;
+
+//header
+$colorHeaderBackground: $primaryColor;
+$colorHeaderBorder: $blue;
+$colorh1: $secondaryColor;
+
+//footer
+$colorFooterBackground: $primaryColor;
+$colorFooterBorder: $secondaryColor;
+
+//section
+$colorSectionBackground: $porcelain;
+$colorSectionSplashBackground: $blue;
+$colorSectionBorder: $blue;
+$colorThumbsBorder: $primaryColor;
+
+//links
+$colorLink: $secondaryColor;
+$colorVisited: $porcelain;
+$colorHover: $blue;
+
+//fonts
+$fontDisplay: 'Lancelot', cursive;
+$fontBody: 'Scada', sans-serif;
+$fontList: 'Scada', sans-serif;
+$fontBodyWeight: 300;
+$fontDisplaySize: 2.4rem;
+$fontDisplaySecondarySize: 2.4rem;
+$fontDisplaySizeTablet: 2rem;
+$fontDisplaySizePhone: 1.6rem;
+$fontBodySize: 1.2rem;
+$fontBodySizeTablet: 1.2rem;
+$fontBodySizePhone: 1rem;
+$fontNavSize: 1.4rem;
+
+@import '../application.scss';

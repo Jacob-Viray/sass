@@ -1,0 +1,13 @@
+//footer partial
+
+//footer
+footer {
+	width: 100%;
+	height: 80px;
+	background-color: $colorFooterBackground;
+	p {
+		text-align: center;
+		font-family: $fontBody;
+		font-size: 0.8rem;
+	}
+}

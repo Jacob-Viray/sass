@@ -1,0 +1,45 @@
+//reset and basic patial
+
+//reset
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body, main {
+	width: 100%;
+	height: 100%;
+	max-width: 1920px;
+	margin: 0 auto;
+	overflow-x: hidden;
+}
+
+//typography
+a {
+	line-height: $lineHeightBody;
+	text-decoration: none;
+	color: $ebony;
+}
+p {
+	font-family: $fontBody;
+	font-size: $fontBodySize;
+	font-weight: $fontBodyWeight;
+	line-height: $lineHeightBody;
+	@include breakpointTablet {
+		font-size: $fontBodySizeTablet;
+ 	}
+ 	@include breakpointPhone {
+ 		font-size: $fontBodySizePhone;
+ 	}
+}
+
+h2 {
+	font-family: $fontDisplay;
+	font-size: $fontDisplaySecondarySize;
+	@include breakpointTablet {
+		font-size: $fontDisplaySizeTablet;
+	}
+	@include breakpointPhone {
+		font-size: $fontDisplaySizePhone;
+	}
+}

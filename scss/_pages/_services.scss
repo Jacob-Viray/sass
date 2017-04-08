@@ -1,0 +1,29 @@
+//base services page structure
+
+
+
+
+//services page
+
+#main-services section:first-of-type {
+	@extend .section-list-type-one;
+}
+
+#main-services section:nth-of-type(2) {
+	@extend .section-list-type-one;
+}
+
+#main-services section:nth-of-type(3) {
+	@extend .section-base;
+	#agent-gallery {
+		@include flexboxGallery;
+		figure {
+		border: 2px solid $colorThumbsBorder;
+		@include flexbox (flex, center, center, row, nowrap);
+		overflow: hidden;
+		}
+		a {
+		font-family: $fontBody;
+		}
+	}
+}

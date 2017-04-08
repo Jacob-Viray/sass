@@ -1,0 +1,47 @@
+//theme Ayyubid
+
+
+@import url('https://fonts.googleapis.com/css?family=Tangerine:400,700');
+@import url('https://fonts.googleapis.com/css?family=Muli:300,400');
+
+@import '../base.scss';
+
+//theme color
+$primaryColor: $emerald;
+$secondaryColor: $fern;
+
+//header
+$colorHeaderBackground: $secondaryColor;
+$colorHeaderBorder: $secondaryColor;
+$colorh1: $porcelain;
+
+//footer
+$colorFooterBackground: $secondaryColor;
+$colorFooterBorder: $primaryColor;
+
+//section
+$colorSectionBackground: $porcelain;
+$colorSectionSplashBackground: $secondaryColor;
+$colorSectionBorder: $primaryColor;
+$colorThumbsBorder: $secondaryColor;
+
+//links
+$colorLink: $porcelain;
+$colorVisited: $porcelain;
+$colorHover: $ebony;
+
+//fonts
+$fontDisplay: 'Tangerine', cursive;
+$fontBody: 'Muli', sans-serif;
+$fontList: 'Muli', sans-serif;
+$fontBodyWeight: 300;
+$fontDisplaySize: 3.2rem;
+$fontDisplaySecondarySize: 3.2rem;
+$fontDisplaySizeTablet: 2.8rem;
+$fontDisplaySizePhone: 2.4rem;
+$fontBodySize: 1.2rem;
+$fontBodySizeTablet: 1.2rem;
+$fontBodySizePhone: 1rem;
+$fontNavSize: 2.2rem;
+
+@import '../application.scss';

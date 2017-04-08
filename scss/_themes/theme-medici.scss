@@ -1,0 +1,47 @@
+//theme Medici
+
+
+@import url('https://fonts.googleapis.com/css?family=Spirax');
+@import url('https://fonts.googleapis.com/css?family=Gilda+Display');
+
+@import '../base.scss';
+
+//theme color
+$primaryColor: $emerald;
+$secondaryColor: $alabaster;
+
+//header
+$colorHeaderBackground: $primaryColor;
+$colorHeaderBorder: $primaryColor;
+$colorh1: $secondaryColor;
+
+//footer
+$colorFooterBackground: $primaryColor;
+$colorFooterBorder: $secondaryColor;
+
+//section
+$colorSectionBackground: $secondaryColor;
+$colorSectionSplashBackground: $secondaryColor;
+$colorSectionBorder: $primaryColor;
+$colorThumbsBorder: $primaryColor;
+
+//links
+$colorLink: $secondaryColor;
+$colorVisited: $porcelain;
+$colorHover: $ebony;
+
+//fonts
+$fontDisplay: 'Spirax', cursive;
+$fontBody: 'Gilda Display', sans-serif;
+$fontList: 'Gilda Display', sans-serif;
+$fontBodyWeight: 300;
+$fontDisplaySize: 2.2rem;
+$fontDisplaySecondarySize: 1.8rem;
+$fontDisplaySizeTablet: 1.8rem;
+$fontDisplaySizePhone: 1.4rem;
+$fontBodySize: 1.2rem;
+$fontBodySizeTablet: 1.2rem;
+$fontBodySizePhone: 1rem;
+$fontNavSize: 1.4rem;
+
+@import '../application.scss';

@@ -1,0 +1,71 @@
+//base color variables
+
+
+
+// https://dudleystorey.github.io/thenewdefaults/
+
+/*
+
+general guideline for theme colors
+ayyubid - orange, green
+capet - blue, white
+habsburg - black, gold
+medici - green, white
+plantagenet - red, blue
+trastamara - yellow
+
+*/
+
+
+
+
+
+
+
+$alabaster: #fefaf0;
+$porcelain: #fffffc;
+$grey: #aaaaaa;
+
+$blue: #0074d9;
+$cobalt: #1438bd;
+$azure: #1621a6;
+
+$yellow: #ffdc00;
+$daffodil: #feee88;
+$orange: #ff851b;
+
+$rose: #e2252a;
+$crimson: #b8100a;
+$mahogany: #420d09;
+
+$fern: #5dbc64;
+$emerald: #038911;
+$pine: #24501e;
+
+$ebony: #080401;
+
+
+//main colors
+
+$primaryColor: $ebony !default;
+$secondaryColor: $alabaster !default;
+
+//header
+$colorHeaderBackground: $secondaryColor !default;
+$colorHeaderBorder: $primaryColor !default;
+$colorh1: $ebony !default;
+
+//footer
+$colorFooterBackground: $secondaryColor !default;
+$colorFooterBorder: $primaryColor !default;
+
+//section
+$colorSectionBackground: $porcelain !default;
+$colorSectionSplashBackground: $porcelain !default;
+$colorSectionBorder: $ebony !default;
+$colorThumbsBorder: $ebony !default;
+
+//links
+$colorLink: $ebony !default;
+$colorVisited: $ebony !default;
+$colorHover: lightgrey !default;

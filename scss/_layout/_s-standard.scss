@@ -1,0 +1,66 @@
+//base standard section layouts
+
+
+//layout type 1
+
+.section-base {
+	width: 100%;
+	min-height: 480px;
+	background-color: $colorSectionBackground;
+	border-bottom: 5px solid $colorSectionBorder;
+	overflow: hidden;
+	h2 {
+		padding-top: 20px;
+		text-align: center;
+	}
+}
+
+.section-centered {
+	@extend .section-base;
+	@include flexbox (flex, center, center, row, nowrap);
+}
+
+//standard halved between figure and textbox
+.section-halved {
+	@extend .section-centered;
+	div {
+	 	min-width: 480px;
+		width: 50vw;
+		max-width: 600px;
+ 		height: 100%;
+		@include flexbox (flex, center, center, column, nowrap);
+		h2 {
+			padding-bottom: 20px;
+		}
+		@include breakpointPhone {
+		 	min-width: 300px;
+			margin: 0 auto;
+			width: 300px;
+		}
+	}
+	figure {
+		min-width: 320px;
+		max-width: 600px;
+		height: 100%;
+		overflow: hidden;
+		border-left: 2px solid $primaryColor;
+		margin: 15px;
+		img {
+			float: right;
+			height: 100%;
+			@include breakpointPhone {
+				width: 100%;
+				height: auto;
+			}
+		}
+		@include breakpointPhone {
+			border: none;
+		}
+	}
+	@include breakpointPhone {
+		width: 100vw;
+		height: 100vh;
+		margin: 0 auto;
+		@include flexbox (flex, center, center, column, nowrap);
+	}
+}

@@ -1,0 +1,12 @@
+//mixin links and buttons
+
+@mixin linkColor ($colorLink, $colorVisited, $colorHover) {
+    color: $colorLink;
+    &:visited {
+    color: $colorVisited;
+    }
+    &:hover {
+    color: $colorHover;   
+    }
+	cursor: pointer;
+}

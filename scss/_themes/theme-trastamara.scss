@@ -1,0 +1,47 @@
+//theme Trastamara
+
+
+@import url('https://fonts.googleapis.com/css?family=Clicker+Script');
+@import url('https://fonts.googleapis.com/css?family=Gilda+Display');
+
+@import '../base.scss';
+
+//theme color
+$primaryColor: $ebony;
+$secondaryColor: $daffodil;
+
+//header
+$colorHeaderBackground: $secondaryColor;
+$colorHeaderBorder: $secondaryColor;
+$colorh1: $primaryColor;
+
+//footer
+$colorFooterBackground: $secondaryColor;
+$colorFooterBorder: $primaryColor;
+
+//section
+$colorSectionBackground: $porcelain;
+$colorSectionSplashBackground: $secondaryColor;
+$colorSectionBorder: $primaryColor;
+$colorThumbsBorder: $primaryColor;
+
+//links
+$colorLink: $ebony;
+$colorVisited: $ebony;
+$colorHover: $porcelain;
+
+//fonts
+$fontDisplay: 'Clicker Script', cursive;
+$fontBody: 'Gilda Display', sans-serif;
+$fontList: 'Gilda Display', sans-serif;
+$fontBodyWeight: 300;
+$fontDisplaySize: 3.2rem;
+$fontDisplaySecondarySize: 3.2rem;
+$fontDisplaySizeTablet: 2.8rem;
+$fontDisplaySizePhone: 2.4rem;
+$fontBodySize: 1.2rem;
+$fontBodySizeTablet: 1.2rem;
+$fontBodySizePhone: 1rem;
+$fontNavSize: 2.2rem;
+
+@import '../application.scss';

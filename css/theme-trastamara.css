@@ -1,0 +1,335 @@
+@import url("https://fonts.googleapis.com/css?family=Clicker+Script");
+@import url("https://fonts.googleapis.com/css?family=Gilda+Display");
+/*
+
+general guideline for theme colors
+ayyubid - orange, green
+capet - blue, white
+habsburg - black, gold
+medici - green, white
+plantagenet - red, blue
+trastamara - yellow
+
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body, main {
+  width: 100%;
+  height: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  overflow-x: hidden; }
+
+a {
+  line-height: 2.2rem;
+  text-decoration: none;
+  color: #080401; }
+
+p {
+  font-family: "Gilda Display", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 2.2rem; }
+  @media (max-width: 800px) {
+    p {
+      font-size: 1.2rem; } }
+  @media (max-width: 480px) {
+    p {
+      font-size: 1rem; } }
+
+h2 {
+  font-family: "Clicker Script", cursive;
+  font-size: 3.2rem; }
+  @media (max-width: 800px) {
+    h2 {
+      font-size: 2.8rem; } }
+  @media (max-width: 480px) {
+    h2 {
+      font-size: 2.4rem; } }
+
+header {
+  width: 100%;
+  height: 60px;
+  padding: 20px 10px 0 10px;
+  background-color: #feee88;
+  border-bottom: 5px solid #feee88; }
+  header h1 {
+    font-family: "Clicker Script", cursive;
+    color: #080401;
+    float: left;
+    font-size: 3.2rem; }
+    @media (max-width: 800px) {
+      header h1 {
+        font-size: 2.8rem; } }
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 2.4rem;
+        text-align: center;
+        float: none; } }
+  header nav {
+    height: 100%;
+    font-family: "Clicker Script", cursive;
+    font-size: 2.2rem;
+    display: flex;
+    align-items: center;
+    float: right; }
+    header nav a {
+      color: #080401;
+      cursor: pointer;
+      padding-right: 5px; }
+      header nav a:visited {
+        color: #080401; }
+      header nav a:hover {
+        color: #fffffc; }
+    @media (max-width: 480px) {
+      header nav {
+        float: none;
+        margin: 0 auto;
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: nowrap; } }
+  @media (max-width: 480px) {
+    header {
+      height: auto; } }
+
+.section-base, .section-centered, .section-halved, #main-home section:first-of-type, #main-about section, .section-list-type-one, #main-services section:first-of-type, #main-services section:nth-of-type(2), #main-home section:nth-of-type(2), #main-home section:nth-of-type(3), #main-services section:nth-of-type(3) {
+  width: 100%;
+  min-height: 480px;
+  background-color: #fffffc;
+  border-bottom: 5px solid #080401;
+  overflow: hidden; }
+  .section-base h2, .section-centered h2, .section-halved h2, #main-home section:first-of-type h2, #main-about section h2, .section-list-type-one h2, #main-services section:first-of-type h2, #main-services section:nth-of-type(2) h2, #main-home section:nth-of-type(2) h2, #main-home section:nth-of-type(3) h2, #main-services section:nth-of-type(3) h2 {
+    padding-top: 20px;
+    text-align: center; }
+
+.section-centered, .section-halved, #main-home section:first-of-type, #main-about section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap; }
+
+.section-halved div, #main-home section:first-of-type div, #main-about section div {
+  min-width: 480px;
+  width: 50vw;
+  max-width: 600px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: nowrap; }
+  .section-halved div h2, #main-home section:first-of-type div h2, #main-about section div h2 {
+    padding-bottom: 20px; }
+  @media (max-width: 480px) {
+    .section-halved div, #main-home section:first-of-type div, #main-about section div {
+      min-width: 300px;
+      margin: 0 auto;
+      width: 300px; } }
+.section-halved figure, #main-home section:first-of-type figure, #main-about section figure {
+  min-width: 320px;
+  max-width: 600px;
+  height: 100%;
+  overflow: hidden;
+  border-left: 2px solid #080401;
+  margin: 15px; }
+  .section-halved figure img, #main-home section:first-of-type figure img, #main-about section figure img {
+    float: right;
+    height: 100%; }
+    @media (max-width: 480px) {
+      .section-halved figure img, #main-home section:first-of-type figure img, #main-about section figure img {
+        width: 100%;
+        height: auto; } }
+  @media (max-width: 480px) {
+    .section-halved figure, #main-home section:first-of-type figure, #main-about section figure {
+      border: none; } }
+@media (max-width: 480px) {
+  .section-halved, #main-home section:first-of-type, #main-about section {
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap; } }
+
+.section-list, .section-list-type-one, #main-services section:first-of-type, #main-services section:nth-of-type(2) {
+  padding: 60px 0; }
+  .section-list h2, .section-list-type-one h2, #main-services section:first-of-type h2, #main-services section:nth-of-type(2) h2 {
+    padding-right: 30px;
+    width: 140px; }
+    @media (max-width: 480px) {
+      .section-list h2, .section-list-type-one h2, #main-services section:first-of-type h2, #main-services section:nth-of-type(2) h2 {
+        padding-right: 0; } }
+  .section-list ul, .section-list-type-one ul, #main-services section:first-of-type ul, #main-services section:nth-of-type(2) ul {
+    min-width: 320px;
+    width: 100%;
+    max-width: 800px; }
+    .section-list ul li, .section-list-type-one ul li, #main-services section:first-of-type ul li, #main-services section:nth-of-type(2) ul li {
+      list-style-type: none;
+      font-family: "Gilda Display", sans-serif;
+      font-size: 1.2rem;
+      font-weight: 300;
+      padding-bottom: 20px;
+      line-height: 2.2rem; }
+  @media (max-width: 800px) {
+    .section-list, .section-list-type-one, #main-services section:first-of-type, #main-services section:nth-of-type(2) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      font-size: 1.2rem; } }
+  @media (max-width: 480px) {
+    .section-list, .section-list-type-one, #main-services section:first-of-type, #main-services section:nth-of-type(2) {
+      font-size: 1rem; } }
+
+.section-list-type-one, #main-services section:first-of-type, #main-services section:nth-of-type(2) {
+  display: flex;
+  justify-content: center; }
+
+footer {
+  width: 100%;
+  height: 80px;
+  background-color: #feee88; }
+  footer p {
+    text-align: center;
+    font-family: "Gilda Display", sans-serif;
+    font-size: 0.8rem; }
+
+#main-home section:first-of-type {
+  background-color: #feee88;
+  height: 100vh;
+  max-height: 1200px; }
+  @media (max-width: 480px) {
+    #main-home section:first-of-type {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-direction: column;
+      flex-wrap: nowrap; } }
+
+#main-home section:nth-of-type(2) #tenet-gallery {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  #main-home section:nth-of-type(2) #tenet-gallery div {
+    padding: 10px; }
+  #main-home section:nth-of-type(2) #tenet-gallery figure {
+    width: 300px;
+    height: 300px; }
+  #main-home section:nth-of-type(2) #tenet-gallery a {
+    display: block; }
+  #main-home section:nth-of-type(2) #tenet-gallery a:last-of-type {
+    padding-bottom: 20px; }
+  #main-home section:nth-of-type(2) #tenet-gallery div {
+    width: 320px; }
+    #main-home section:nth-of-type(2) #tenet-gallery div figure {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      width: 100%;
+      overflow: hidden;
+      border: 2px solid #080401; }
+
+#main-home section:nth-of-type(3) #theme-gallery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap; }
+  #main-home section:nth-of-type(3) #theme-gallery h2 {
+    text-align: center; }
+  #main-home section:nth-of-type(3) #theme-gallery div {
+    min-width: 16%;
+    width: 17%;
+    height: 600px;
+    border: 1px solid #080401;
+    overflow: hidden; }
+    #main-home section:nth-of-type(3) #theme-gallery div figure {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      overflow: hidden;
+      transition: all 0.5s ease;
+      opacity: 0.8; }
+      #main-home section:nth-of-type(3) #theme-gallery div figure:hover {
+        transform: scale(1.2);
+        opacity: 1; }
+      #main-home section:nth-of-type(3) #theme-gallery div figure a {
+        cursor: pointer; }
+  @media (max-width: 480px) {
+    #main-home section:nth-of-type(3) #theme-gallery {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      flex-wrap: no-wrap; }
+      #main-home section:nth-of-type(3) #theme-gallery div {
+        width: 100vw;
+        height: 300px; } }
+
+#main-about section {
+  height: 100vh;
+  max-height: 1080px; }
+
+#main-about section figure {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: row;
+  flex-wrap: nowrap; }
+  #main-about section figure img {
+    height: auto; }
+
+#main-about section:nth-child(2) div {
+  order: 2; }
+  @media (max-width: 480px) {
+    #main-about section:nth-child(2) div {
+      order: 1; } }
+#main-about section:nth-child(2) figure {
+  order: 1;
+  border-left: none;
+  border-right: 2px solid #080401; }
+  @media (max-width: 480px) {
+    #main-about section:nth-child(2) figure {
+      order: 2; } }
+
+#main-services section:nth-of-type(3) #agent-gallery {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  #main-services section:nth-of-type(3) #agent-gallery div {
+    padding: 10px; }
+  #main-services section:nth-of-type(3) #agent-gallery figure {
+    width: 300px;
+    height: 300px; }
+  #main-services section:nth-of-type(3) #agent-gallery a {
+    display: block; }
+  #main-services section:nth-of-type(3) #agent-gallery a:last-of-type {
+    padding-bottom: 20px; }
+  #main-services section:nth-of-type(3) #agent-gallery figure {
+    border: 2px solid #080401;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: hidden; }
+  #main-services section:nth-of-type(3) #agent-gallery a {
+    font-family: "Gilda Display", sans-serif; }

@@ -1,0 +1,38 @@
+//mixin flexbox
+
+
+
+@mixin flexboxAlignX ($display, $justify-content) {
+	display: $display;
+	justify-content: $justify-content;
+}
+
+@mixin flexboxAlignY ($display, $align-items) {
+	display: $display;
+	align-items: $align-items;
+}
+
+@mixin flexbox ($display, $align-items, $justify-content, $flex-direction, $flex-wrap) {
+	display: $display;
+	align-items: $align-items;
+	justify-content: $justify-content;
+	flex-direction: $flex-direction;
+	flex-wrap: $flex-wrap;
+}
+
+@mixin flexboxGallery {
+	@include flexbox (flex, center, space-around, row, wrap);
+	div {
+	padding: 10px;
+	}
+	figure {
+		width: 300px;
+		height: 300px;
+	}
+	a {
+		display: block;
+	}
+	a:last-of-type {
+		padding-bottom: 20px;
+	}
+}
